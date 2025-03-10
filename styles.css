@@ -1,14 +1,22 @@
-body {
+body, h1, h2, p, ul, li {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #B8D7E6FF;
+    color: #0C0E0AFF;
 
     font-family: sans-serif;
     line-height: 1.6;
 }
 
 header {
-    background-color: #F0F0F0;
+    background-color: #9BC396FF;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -23,13 +31,26 @@ header .profile img {
 /* Remove default list points */
 header nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* Make Navigation Menu as Rows */
 header nav ul li {
-    display: inline;
     margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0C0E0AFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #5B8E15FF;
+    color: white;
 }
 
 section {
@@ -50,11 +71,13 @@ section {
     margin: 10px;
     width: 300px;
     text-align: center;
+    background-color: white;
+    border-radius: 8px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #0C0E0AFF;
+    color: #B8D7E6FF;
     text-align: center;
     padding: 20px;
 }
